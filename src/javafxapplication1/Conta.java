@@ -14,23 +14,18 @@ import java.util.ArrayList;
 public class Conta {
      char data;
      float total;
-     paciente paciente_ou_expaciente;
+     Paciente_ou_expaciente paciente_ou_expaciente;
      boolean paga;
      String descricao;
      ArrayList <listamedicamento> medicamento_paciente = new ArrayList();
   
      int qtdfucionarios;
      float precofuncionario;
- void setpaga(){
- //Conta.paga = 1;
- }   
-     void get_name(){
- //return paciente_ou_expaciente.nome;
+
+    public void setpaga(boolean paga){
+         this.paga = paga;
+}
+     public String get_name(){
+ return Paciente_ou_expaciente.nome;
  }
-
-    private static class listamedicamento {
-
-        public listamedicamento() {
-        }
-    }
 }

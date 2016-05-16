@@ -9,17 +9,13 @@ package javafxapplication1;
  *
  * @author aluno
  */
-public class Leito {
+public class medicamento {
 
-    int quarto;
-    public int getQuarto() {
-        return quarto;
+    String nome;
+    String tarja;
+    
+    public medicamento(String nome, String tarja) {
+        this.nome = nome;
+        this.tarja = tarja;
     }
-
-    public void setQuarto(int quarto) {
-        this.quarto = quarto;
-    }
-    
-    
-    
 }

@@ -5,10 +5,12 @@
  */
 package javafxapplication1;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author aluno
  */
 class listamedicamento {
-    arraylist<amber> = new arraylist<medicamento>;
+    ArrayList <listamedicamento> medicamento_paciente = new ArrayList(medicamento);
 }

@@ -9,17 +9,10 @@ package javafxapplication1;
  *
  * @author aluno
  */
-public class Leito {
-
-    int quarto;
-    public int getQuarto() {
-        return quarto;
-    }
-
-    public void setQuarto(int quarto) {
-        this.quarto = quarto;
-    }
-    
-    
+public class convenio_paciente {
+    int abrangencia;
+    Paciente_ou_expaciente contratante;
+    char tipo_conta;
     
 }
+

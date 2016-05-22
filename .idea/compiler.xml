@@ -22,10 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="Mavenartifactid" />
+        <module name="java" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="java" target="1.5" />
       <module name="Mavenartifactid" target="1.5" />
     </bytecodeTargetLevel>
   </component>

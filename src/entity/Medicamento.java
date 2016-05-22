@@ -13,16 +13,27 @@ public class Medicamento {
 
     private String nome;
     private String tarja;
-    
+
+    /**
+     * ?
+     * @param nome
+     * @param tarja
+     */
     public Medicamento(String nome, String tarja) {
         this.nome = nome;
         this.tarja = tarja;
     }
 
+    /**
+     * getnome
+     * @return
+     */
     public String getNome() {
         return nome;
     }
-
+/**
+ *
+ * */
     public void setNome(String nome) {
         this.nome = nome;
     }

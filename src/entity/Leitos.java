@@ -3,13 +3,15 @@ package entity;
 import java.util.ArrayList;
 
 public class Leitos {
+	/**
+	 *
+	 * @param listaleitos
+     */
 	public Leitos(Leitos listaleitos Hospital hospital) {
 		this.listaleitos = listaleitos;
 		this.hospital = hospital;
 	}
 
-	private Leito listaleitos :
-	ArrayList
 
 	public arraylist<leito> leitos() {
 		return historicodoenca;
@@ -20,5 +22,9 @@ public class Leitos {
 
 	private Hospital hospital;
 
+	/**
+	 *
+	 * @return
+     */
 
 }

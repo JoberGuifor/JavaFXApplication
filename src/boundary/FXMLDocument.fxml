@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
-</AnchorPane>
+<Pane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Login">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" style="-fx-background-color: #1222;">
+          <children>
+            <Pane layoutX="126.0" layoutY="123.0" />
+              <Label fx:id="label" layoutX="131.0" layoutY="149.0" minHeight="16" minWidth="69" />
+              <Button fx:id="button" layoutX="139.0" layoutY="144.0" onAction="#login" text="Login" />
+            <PasswordField fx:id="pw" layoutX="75.0" layoutY="100.0" />
+            <TextField fx:id="userName" layoutX="75.0" layoutY="66.0" />
+            <AmbientLight color="CHARTREUSE" layoutX="27.0" layoutY="22.0" lightOn="true" />
+            <Label layoutX="14.0" layoutY="71.0" text="Login" />
+            <Label layoutX="14.0" layoutY="105.0" text="Senha" />
+          </children>
+         <effect>
+            <Bloom />
+         </effect>
+      </AnchorPane>
+   </children>
+</Pane>

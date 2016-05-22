@@ -5,12 +5,17 @@
  */
 package entity;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author aluno
  */
-class listamedicamento {
-    ArrayList <listamedicamento> medicamento_paciente = new ArrayList(medicamento);
+public class Medicamento {
+
+    String nome;
+    String tarja;
+    
+    public Medicamento(String nome, String tarja) {
+        this.nome = nome;
+        this.tarja = tarja;
+    }
 }

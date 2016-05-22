@@ -16,25 +16,65 @@ import javafx.stage.Stage;
  * @author aluno
  */
 public class Aplicacao extends JavaFXApplication1{
-    public static void main(String[] args) {
-        
-     launch(); // 2
- }
+
+ private Stage primaryStage;
+ private BorderPane rootLayout;
 
  @Override
- public void start(Stage palco) throws Exception { // 3
-  StackPane raiz = new StackPane(); // 4
-  Label lblMensagem = new Label(); // 5
+ public void start(Stage primaryStage) {
+  this.primaryStage = primaryStage;
+  this.primaryStage.setTitle("AddressApp");
 
-  lblMensagem.setText("Estou aprendendo JavaFX!"); // 6
-  raiz.getChildren().add(lblMensagem); // 7
+  initRootLayout();
 
-  Scene cena = new Scene(raiz, 250, 100); // 8
-  palco.setTitle("Aprendendo JavaFX"); // 9
-  palco.setScene(cena); // 10
-  palco.show(); // 11
-
+  showPersonOverview();
  }
-}
-    
+
+ /**
+  * Inicializa o root layout (layout base).
+  */
+ public void initRootLayout() {
+  try {
+   // Carrega o root layout do arquivo fxml.
+   FXMLLoader loader = new FXMLLoader();
+   loader.setLocation(MainApp.class.getResource("view/RootLayout.fxml"));
+   rootLayout = (BorderPane) loader.load();
+
+   // Mostra a scene (cena) contendo oroot layout.
+   Scene scene = new Scene(rootLayout);
+   primaryStage.setScene(scene);
+   primaryStage.show();
+  } catch (IOException e) {
+   e.printStackTrace();
+  }
+ }
+
+ /**
+  * Mostra o person overview dentro do root layout.
+  */
+ public void showPersonOverview() {
+  try {
+   // Carrega o person overview.
+   FXMLLoader loader = new FXMLLoader();
+   loader.setLocation(MainApp.class.getResource("view/PersonOverview.fxml"));
+   AnchorPane personOverview = (AnchorPane) loader.load();
+
+   // Define o person overview dentro do root layout.
+   rootLayout.setCenter(personOverview);
+  } catch (IOException e) {
+   e.printStackTrace();
+  }
+ }
+
+ /**
+  * Retorna o palco principal.
+  * @return
+  */
+ public Stage getPrimaryStage() {
+  return primaryStage;
+ }
+
+ public static void main(String[] args) {
+  launch(args);
+ }
 }

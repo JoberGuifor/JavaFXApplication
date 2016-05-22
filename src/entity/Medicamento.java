@@ -18,4 +18,20 @@ public class Medicamento {
         this.nome = nome;
         this.tarja = tarja;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getTarja() {
+        return tarja;
+    }
+
+    public void setTarja(String tarja) {
+        this.tarja = tarja;
+    }
 }

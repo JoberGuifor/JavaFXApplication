@@ -10,8 +10,10 @@
 <?import javafx.scene.layout.Pane?>
 
 <Pane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Login">
-   <children>
+   <!--suppress JavaFxDefaultTag -->
+    <children>
       <AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" style="-fx-background-color: #1222;">
+          <!--suppress JavaFxDefaultTag -->
           <children>
             <Pane layoutX="126.0" layoutY="123.0" />
               <Label fx:id="label" layoutX="131.0" layoutY="149.0" minHeight="16" minWidth="69" />

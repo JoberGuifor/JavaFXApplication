@@ -2,6 +2,10 @@ package entity;
 
 import entity.PacienteOUExpaciente;
 
+/**
+ *
+ *
+ */
 public class AuxiliarInfermagem {
 
 	private char usuario;
@@ -59,7 +63,10 @@ public class AuxiliarInfermagem {
 	public PacienteOUExpaciente getPacienteOUExpaciente() {
 		return PacienteOUExpaciente;
 	}
-
+/**
+ * set para o paciente
+ *
+ * */
 	public void setPacienteOUExpaciente(PacienteOUExpaciente PacienteOUExpaciente) {
 		this.PacienteOUExpaciente = PacienteOUExpaciente;
 	}

@@ -1,5 +1,8 @@
 package entity;
 
+/**
+ *
+ */
 public class Conta {
     private char data;
     private float total;
@@ -11,6 +14,17 @@ public class Conta {
     private MedicamentoPaciente MedicamentoPaciente;
     private PacienteOUExpaciente PacienteOUExpaciente;
 
+    /**
+     * @param data
+     * @param total
+     * @param paga
+     * @param descricao
+     * @param qtdfuncionarios
+     * @param preçofuncionario
+     * @param leito
+     * @param medicamentoPaciente
+     * @param pacienteOUExpaciente
+     */
     public Conta(char data, float total, boolean paga, char descricao, int qtdfuncionarios, float preçofuncionario, Leito leito, MedicamentoPaciente medicamentoPaciente, PacienteOUExpaciente pacienteOUExpaciente) {
         this.data = data;
         this.total = total;

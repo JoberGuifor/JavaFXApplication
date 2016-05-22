@@ -2,6 +2,9 @@ package entity;
 
 import java.util.ArrayList;
 
+/**
+ *
+ */
 public class Hospital {
 
 	private ArrayList<Leitos>leitos_lista;

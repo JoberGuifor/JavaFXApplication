@@ -2,6 +2,9 @@ package entity;
 
 import java.util.ArrayList;
 
+/**
+ *
+ */
 public class pacienteOuExpaciente {
 
     private char nome;

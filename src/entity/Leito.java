@@ -1,4 +1,8 @@
 package entity;
+
+/**
+ *
+ */
 //em um quarto há varios leitos
 public class Leito {
 

@@ -1,6 +1,11 @@
 package entity;
 
+/**
+ *
+ *
+ */
 public class ConvenioPaciente {
+
 
 	private int abrangencia;
 

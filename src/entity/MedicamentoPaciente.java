@@ -1,5 +1,8 @@
 package entity;
 
+/**
+ *
+ */
 public class MedicamentoPaciente {
 	public MedicamentoPaciente(String tarja, boolean vendacomreceita, char nome, float preco, Admin admin, Conta conta) {
 		this.tarja = tarja;

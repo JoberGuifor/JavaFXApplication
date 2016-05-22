@@ -3,12 +3,12 @@ package entity;
 public class Leito {
 
 
-	public Paciente_ou_expaciente getPaciente() {
+	public PacienteOUExpaciente getPaciente() {
 		return paciente;
 	}
 
 
-	public void setPaciente(Paciente_ou_expaciente paciente) {
+	public void setPaciente(PacienteOUExpaciente paciente) {
 		this.paciente = paciente;
 	}
 
@@ -68,12 +68,12 @@ public class Leito {
 		this.admin = admin;
 	}
 
-	public Paciente_ou_expaciente getPaciente_ou_expaciente() {
-		return paciente_ou_expaciente;
+	public PacienteOUExpaciente getPacienteOUExpaciente() {
+		return PacienteOUExpaciente;
 	}
 
-	public void setPaciente_ou_expaciente(Paciente_ou_expaciente[] paciente_ou_expaciente) {
-		this.paciente_ou_expaciente = paciente_ou_expaciente;
+	public void setPacienteOUExpaciente(PacienteOUExpaciente[] PacienteOUExpaciente) {
+		this.PacienteOUExpaciente = PacienteOUExpaciente;
 	}
 
 	public Conta[] getConta() {
@@ -84,8 +84,8 @@ public class Leito {
 		this.conta = conta;
 	}
 
-	public void setPaciente_ou_expaciente(Paciente_ou_expaciente paciente_ou_expaciente) {
-		this.paciente_ou_expaciente = paciente_ou_expaciente;
+	public void setPacienteOUExpaciente(PacienteOUExpaciente PacienteOUExpaciente) {
+		this.PacienteOUExpaciente = PacienteOUExpaciente;
 	}
 
 	public Hospital getHospital() {
@@ -116,7 +116,7 @@ public class Leito {
 		this.leito = leito;
 	}
 
-	private Paciente_ou_expaciente paciente;
+	private PacienteOUExpaciente paciente;
 
 	private int quantidadepaciente;
 
@@ -138,11 +138,11 @@ public class Leito {
 
 	private Admin admin;
 
-	private Paciente_ou_expaciente paciente_ou_expaciente;
+	private PacienteOUExpaciente PacienteOUExpaciente;
 
 	private Hospital hospital;
 
-	private Paciente_ou_expaciente[] paciente_ou_expaciente;
+	private PacienteOUExpaciente[] PacienteOUExpaciente;
 
 	private Conta[] conta;
 
@@ -162,7 +162,7 @@ public class Leito {
 
 	}
 
-	public void setpaciete(Paciente_ou_expaciente paciente) {
+	public void setpaciete(PacienteOUExpaciente paciente) {
 
 	}
 
@@ -174,7 +174,7 @@ public class Leito {
 
 	}
 
-	public Paciente_ou_expaciente getpaciente(int nquartro, int nleito) {
+	public PacienteOUExpaciente getpaciente(int nquartro, int nleito) {
 		return null;
 	}
 

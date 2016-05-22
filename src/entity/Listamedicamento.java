@@ -16,7 +16,7 @@ class Listamedicamento {
         this.medicamento_paciente = medicamento_paciente;
     }
 
-    public ArrayList<listamedicamento> getMedicamento_paciente() {
+    public ArrayList<listamedicamento> getMedicamentoPaciente() {
 
         return Listamedicamento;
     }

@@ -19,16 +19,16 @@ public class pacienteOuExpaciente {
 
     private Conta conta;
 
-    private Convenio_paciente convenio;
+    private ConvenioPaciente convenio;
 
     private Conta conta;
 
     private AuxiliarInfermagem auxiliarInfermagem;
 
-    public pacienteOuExpaciente(AuxiliarInfermagem auxiliarInfermagem, Conta conta, Convenio_paciente convenio_paciente, Convenio_paciente[] convenio_paciente1, Leito[] leito, ArrayList convenio, boolean vivo, arraylist<String> historico_doença, char cpf, char nome) {
+    public pacienteOuExpaciente(AuxiliarInfermagem auxiliarInfermagem, Conta conta, ConvenioPaciente ConvenioPaciente, ConvenioPaciente[] ConvenioPaciente1, Leito[] leito, ArrayList convenio, boolean vivo, arraylist<String> historico_doença, char cpf, char nome) {
         this.auxiliarInfermagem = auxiliarInfermagem;
         this.conta = conta;
-        this.convenio_paciente = convenio_paciente;
+        this.ConvenioPaciente = ConvenioPaciente;
         this.leito = leito;
         this.convenio = convenio;
         this.vivo = vivo;
@@ -73,7 +73,7 @@ public class pacienteOuExpaciente {
         return convenio;
     }
 
-    public void setConvenio(Convenio_paciente convenio) {
+    public void setConvenio(ConvenioPaciente convenio) {
         this.convenio = convenio;
     }
 
@@ -105,16 +105,16 @@ public class pacienteOuExpaciente {
         this.auxiliarInfermagem = auxiliarInfermagem;
     }
 
-    public Convenio_paciente[] getConveniopaciente() {
-        return convenio_paciente;
+    public ConvenioPaciente[] getConveniopaciente() {
+        return ConvenioPaciente;
     }
 
-    public void setConvenio_paciente(Convenio_paciente convenio_paciente) {
-        this.convenio_paciente = convenio_paciente;
+    public void setConvenioPaciente(ConvenioPaciente ConvenioPaciente) {
+        this.ConvenioPaciente = ConvenioPaciente;
     }
 
-    public void setConvenio_paciente(Convenio_paciente[] convenio_paciente) {
-        this.convenio_paciente = convenio_paciente;
+    public void setConvenioPaciente(ConvenioPaciente[] ConvenioPaciente) {
+        this.ConvenioPaciente = ConvenioPaciente;
     }
 }
 

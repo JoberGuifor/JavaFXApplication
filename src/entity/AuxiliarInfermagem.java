@@ -1,6 +1,6 @@
 package entity;
 
-import entity.Paciente_ou_expaciente;
+import entity.PacienteOUExpaciente;
 
 public class AuxiliarInfermagem {
 
@@ -13,7 +13,7 @@ public class AuxiliarInfermagem {
 	private float salario;
 
 
-	private Paciente_ou_expaciente paciente_ou_expaciente;
+	private PacienteOUExpaciente PacienteOUExpaciente;
 
 	public char getUsuario() {
 		return usuario;
@@ -56,12 +56,12 @@ public class AuxiliarInfermagem {
 	}
 
 
-	public Paciente_ou_expaciente getPaciente_ou_expaciente() {
-		return paciente_ou_expaciente;
+	public PacienteOUExpaciente getPacienteOUExpaciente() {
+		return PacienteOUExpaciente;
 	}
 
-	public void setPaciente_ou_expaciente(Paciente_ou_expaciente paciente_ou_expaciente) {
-		this.paciente_ou_expaciente = paciente_ou_expaciente;
+	public void setPacienteOUExpaciente(PacienteOUExpaciente PacienteOUExpaciente) {
+		this.PacienteOUExpaciente = PacienteOUExpaciente;
 	}
 
 }

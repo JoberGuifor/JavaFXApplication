@@ -13,7 +13,7 @@ public class Leitos {
 	ArrayList
 
 	public arraylist<leito> leitos() {
-		return historico_doença;
+		return historicodoenca;
 	}
 	;
 

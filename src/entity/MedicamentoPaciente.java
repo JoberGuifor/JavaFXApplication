@@ -1,7 +1,7 @@
 package entity;
 
-public class Medicamento_paciente {
-	public Medicamento_paciente(String tarja, boolean vendacomreceita, char nome, float preco, Admin admin, Conta conta) {
+public class MedicamentoPaciente {
+	public MedicamentoPaciente(String tarja, boolean vendacomreceita, char nome, float preco, Admin admin, Conta conta) {
 		this.tarja = tarja;
 		this.vendacomreceita = vendacomreceita;
 		this.nome = nome;

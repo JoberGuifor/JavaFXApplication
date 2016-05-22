@@ -1,6 +1,6 @@
 package entity;
 
-public class Convenio_paciente {
+public class ConvenioPaciente {
 
 	private int abrangencia;
 
@@ -12,7 +12,7 @@ public class Convenio_paciente {
 
 	private Paciente_ou_expaciente paciente_ou_expaciente;
 
-	public Convenio_paciente(int abrangencia, Paciente_ou_expaciente contratante, char tipo_conta, Paciente_ou_expaciente[] paciente_ou_expaciente) {
+	public ConvenioPaciente(int abrangencia, Paciente_ou_expaciente contratante, char tipo_conta, Paciente_ou_expaciente[] paciente_ou_expaciente) {
 		this.abrangencia = abrangencia;
 		this.contratante = contratante;
 		this.tipo_conta = tipo_conta;

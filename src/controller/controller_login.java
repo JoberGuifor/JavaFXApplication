@@ -1,11 +1,11 @@
 package Controller;
 
-import Boundary.loginadmin;
-import Boundary.login;
-import Controller.Entity.AuxiliarInfermagem;
-import Controller.Entity.Admin;
-import Boundary.Telaadm;
 import Boundary.Tela_aux;
+import Boundary.Telaadm;
+import Boundary.login;
+import Boundary.loginadmin;
+import Controller.Entity.Admin;
+import Controller.Entity.AuxiliarInfermagem;
 
 public class controller_login {
 

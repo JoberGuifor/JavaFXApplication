@@ -11,8 +11,8 @@ package entity;
  */
 public class Medicamento {
 
-    String nome;
-    String tarja;
+    private String nome;
+    private String tarja;
     
     public Medicamento(String nome, String tarja) {
         this.nome = nome;

@@ -2,120 +2,6 @@ package entity;
 //em um quarto há varios leitos
 public class Leito {
 
-
-	public PacienteOUExpaciente getPaciente() {
-		return paciente;
-	}
-
-
-	public void setPaciente(PacienteOUExpaciente paciente) {
-		this.paciente = paciente;
-	}
-
-	public int getQuantidadepaciente() {
-		return quantidadepaciente;
-	}
-
-	public void setQuantidadepaciente(int quantidadepaciente) {
-		this.quantidadepaciente = quantidadepaciente;
-	}
-
-	public int getContpaciente() {
-		return contpaciente;
-	}
-
-	public void setContpaciente(int contpaciente) {
-		this.contpaciente = contpaciente;
-	}
-
-	public double getPreço() {
-		return preço;
-	}
-
-	public void setPreço(double preço) {
-		this.preço = preço;
-	}
-
-	public int getQuarto() {
-		return quarto;
-	}
-
-	public void setQuarto(int quarto) {
-		this.quarto = quarto;
-	}
-
-	public boolean isOcupado() {
-		return ocupado;
-	}
-
-	public void setOcupado(boolean ocupado) {
-		this.ocupado = ocupado;
-	}
-
-	public int getNumero() {
-		return numero;
-	}
-
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}
-
-	public Admin getAdmin() {
-		return admin;
-	}
-
-	public void setAdmin(Admin admin) {
-		this.admin = admin;
-	}
-
-	public PacienteOUExpaciente getPacienteOUExpaciente() {
-		return PacienteOUExpaciente;
-	}
-
-	public void setPacienteOUExpaciente(PacienteOUExpaciente[] PacienteOUExpaciente) {
-		this.PacienteOUExpaciente = PacienteOUExpaciente;
-	}
-
-	public Conta[] getConta() {
-		return conta;
-	}
-
-	public void setConta(Conta[] conta) {
-		this.conta = conta;
-	}
-
-	public void setPacienteOUExpaciente(PacienteOUExpaciente PacienteOUExpaciente) {
-		this.PacienteOUExpaciente = PacienteOUExpaciente;
-	}
-
-	public Hospital getHospital() {
-		return hospital;
-	}
-
-	public void setHospital(Hospital hospital) {
-		this.hospital = hospital;
-	}
-
-	public Controller.Entity.Leito getLeitos() {
-		return leitos;
-	}
-
-	public void setLeitos(Leitos leitos) {
-		this.leitos = leitos;
-	}
-
-	public void setLeitos(Controller.Entity.Leito leitos) {
-		this.leitos = leitos;
-	}
-
-	public Controller.Entity.Leito getLeito() {
-		return leito;
-	}
-
-	public void setLeito(Controller.Entity.Leito leito) {
-		this.leito = leito;
-	}
-
 	private PacienteOUExpaciente paciente;
 
 	private int quantidadepaciente;
@@ -132,58 +18,115 @@ public class Leito {
 
 	private Admin admin;
 
-	private Leito leitos;
-
-	private Leito leito;
-
 	private Admin admin;
 
 	private PacienteOUExpaciente PacienteOUExpaciente;
 
 	private Hospital hospital;
 
-	private PacienteOUExpaciente[] PacienteOUExpaciente;
-
 	private Conta[] conta;
 
-	private Conta[] conta;
-
-	private Leitos leitos;
-
-	public boolean setpreço(double preco) {
-		return false;
+	public Leito(PacienteOUExpaciente paciente, int quantidadepaciente, int contpaciente, double preço, int quarto, boolean ocupado, int numero, Admin admin, Admin admin1, PacienteOUExpaciente pacienteOUExpaciente, Hospital hospital, Conta[] conta) {
+		this.paciente = paciente;
+		this.quantidadepaciente = quantidadepaciente;
+		this.contpaciente = contpaciente;
+		this.preço = preço;
+		this.quarto = quarto;
+		this.ocupado = ocupado;
+		this.numero = numero;
+		this.admin = admin;
+		this.admin = admin1;
+		PacienteOUExpaciente = pacienteOUExpaciente;
+		this.hospital = hospital;
+		this.conta = conta;
 	}
 
-	public float getpreço() {
-		return 0;
+
+	public Conta[] getConta() {
+		return conta;
 	}
 
-	public void setquarto(int numero) {
-
+	public void setConta(Conta[] conta) {
+		this.conta = conta;
 	}
 
-	public void setpaciete(PacienteOUExpaciente paciente) {
-
+	public Hospital getHospital() {
+		return hospital;
 	}
 
-	public void setocupado(boolean ocupado) {
-
+	public void setHospital(Hospital hospital) {
+		this.hospital = hospital;
 	}
 
-	public void setnumero(int numero) {
-
+	public PacienteOUExpaciente getPacienteOUExpaciente() {
+		return PacienteOUExpaciente;
 	}
 
-	public PacienteOUExpaciente getpaciente(int nquartro, int nleito) {
-		return null;
+	public void setPacienteOUExpaciente(PacienteOUExpaciente pacienteOUExpaciente) {
+		PacienteOUExpaciente = pacienteOUExpaciente;
 	}
 
-	public boolean getocupado() {
-		return false;
+	public Admin getAdmin() {
+		return admin;
 	}
 
-	public int getnumero() {
-		return 0;
+	public void setAdmin(Admin admin) {
+		this.admin = admin;
 	}
 
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public boolean isOcupado() {
+		return ocupado;
+	}
+
+	public void setOcupado(boolean ocupado) {
+		this.ocupado = ocupado;
+	}
+
+	public int getQuarto() {
+		return quarto;
+	}
+
+	public void setQuarto(int quarto) {
+		this.quarto = quarto;
+	}
+
+	public double getPreço() {
+		return preço;
+	}
+
+	public void setPreço(double preço) {
+		this.preço = preço;
+	}
+
+	public int getContpaciente() {
+		return contpaciente;
+	}
+
+	public void setContpaciente(int contpaciente) {
+		this.contpaciente = contpaciente;
+	}
+
+	public int getQuantidadepaciente() {
+		return quantidadepaciente;
+	}
+
+	public void setQuantidadepaciente(int quantidadepaciente) {
+		this.quantidadepaciente = quantidadepaciente;
+	}
+
+	public PacienteOUExpaciente getPaciente() {
+		return paciente;
+	}
+
+	public void setPaciente(PacienteOUExpaciente paciente) {
+		this.paciente = paciente;
+	}
 }

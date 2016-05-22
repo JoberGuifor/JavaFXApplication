@@ -3,9 +3,8 @@ package entity;
 import java.util.ArrayList;
 
 public class Leitos {
-	public Leitos(Leito listaleitos, Leito leito, Hospital hospital) {
+	public Leitos(Leitos listaleitos Hospital hospital) {
 		this.listaleitos = listaleitos;
-		addleito().leito = leito;
 		this.hospital = hospital;
 	}
 
@@ -17,12 +16,9 @@ public class Leitos {
 	}
 	;
 
-	private Leito leito;
+	private Leitos leitos;
 
 	private Hospital hospital;
 
-	public boolean addleito(Leito leito) {
-		return false;
-	}
 
 }

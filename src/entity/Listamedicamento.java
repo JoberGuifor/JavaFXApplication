@@ -12,8 +12,8 @@ import java.util.ArrayList;
  * @author aluno
  */
 class Listamedicamento {
-    public Listamedicamento(ArrayList<listamedicamento> medicamento_paciente) {
-        this.medicamento_paciente = medicamento_paciente;
+    public Listamedicamento(ArrayList<listamedicamento> MedicamentoPaciente) {
+        this.MedicamentoPaciente = MedicamentoPaciente;
     }
 
     public ArrayList<listamedicamento> getMedicamentoPaciente() {
@@ -21,9 +21,9 @@ class Listamedicamento {
         return Listamedicamento;
     }
 
-    public void setMedicamento_paciente(ArrayList<listamedicamento> medicamento_paciente) {
-        this.medicamento_paciente = medicamento_paciente;
+    public void setMedicamentoPaciente(ArrayList<listamedicamento> MedicamentoPaciente) {
+        this.MedicamentoPaciente = MedicamentoPaciente;
     }
 
-    private ArrayList <listamedicamento> medicamento_paciente = new ArrayList(Medicamento);
+    private ArrayList <listamedicamento> MedicamentoPaciente = new ArrayList(Medicamento);
 }

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaFXApplication.iml" filepath="$PROJECT_DIR$/JavaFXApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modulosmaven/Mavenartifactid.iml" filepath="$PROJECT_DIR$/modulosmaven/Mavenartifactid.iml" />
     </modules>
   </component>
 </project>

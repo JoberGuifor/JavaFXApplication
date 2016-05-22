@@ -22,7 +22,7 @@ import javafx.stage.Stage;
  *
  * @author aluno
  */
-public class raiz extends Application {
+public class Raiz extends Application {
 
     public static void main(String[] args) {
         launch();

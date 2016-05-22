@@ -7,7 +7,7 @@ import Boundary.loginadmin;
 import Controller.Entity.Admin;
 import Controller.Entity.AuxiliarInfermagem;
 
-public class controller_login {
+public class ControllerLogin {
 
 	private loginadmin loginadmin;
 

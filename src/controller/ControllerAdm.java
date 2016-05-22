@@ -3,7 +3,7 @@ package Controller;
 import Boundary.Telaadm;
 import Controller.Entity.Admin;
 
-public class controle_adm {
+public class ControllerAdm {
 
 	private Telaadm telaadm;
 

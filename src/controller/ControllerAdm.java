@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 
 import Boundary.Telaadm;
 import Controller.Entity.Admin;

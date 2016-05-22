@@ -12,6 +12,8 @@ import java.util.ArrayList;
  * @author aluno
  */
 class Listamedicamento {
+
+    private ArrayList <listamedicamento> MedicamentoPaciente = new ArrayList(Medicamento);
     public Listamedicamento(ArrayList<listamedicamento> MedicamentoPaciente) {
         this.MedicamentoPaciente = MedicamentoPaciente;
     }
@@ -25,5 +27,4 @@ class Listamedicamento {
         this.MedicamentoPaciente = MedicamentoPaciente;
     }
 
-    private ArrayList <listamedicamento> MedicamentoPaciente = new ArrayList(Medicamento);
 }

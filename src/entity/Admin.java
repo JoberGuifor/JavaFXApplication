@@ -1,7 +1,7 @@
 package entity;
 
-import Controller.controller_login;
 import Controller.controle_adm;
+import Controller.controller_login;
 
 public class Admin {
 

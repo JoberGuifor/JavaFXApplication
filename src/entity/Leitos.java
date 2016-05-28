@@ -3,26 +3,39 @@ package entity;
 import java.util.ArrayList;
 
 public class Leitos {
-	/**
-	 *
-	 * @param listaleitos
-     */
+
     
-        private ArrayList<Leito> leitos;
+        private final ArrayList<Leito> leitos;
         
-	public Leitos(Hospital hospital) {
-		this.hospital = hospital;
+        
+	public Leitos() {
+        this.leitos = new ArrayList();
+        
 	}
+
 
 //
 //	public void getLeitos(int num){
 //		return leitos.;
 //	}
+        ;
+	
+
+//
+//	public void getLeitos(int num){
+//		return leitos.;
+//	}
+        ;
+	
+
+//	}
         
-	private final Hospital hospital;
-        void addleito(Leito leito){
+	public void addleito(Leito leito){
             leitos.add(leito);
         }
+
+   public void remove(Leito leito) {
+       leitos.remove(leito);    }
 
 	/**
 	 *

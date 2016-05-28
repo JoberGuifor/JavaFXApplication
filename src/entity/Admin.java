@@ -3,7 +3,7 @@ package entity;
 //import Controller.controle_adm;
 //import Controller.controller_login;
 
-public class Admins {
+public class Admin {
 
 	private String usuario;
 
@@ -15,20 +15,16 @@ public class Admins {
 
 	private int idade;
 
-	private Aplicacao aplicacao;
+	//private Aplicacao aplicacao;
 
 	private Hospital hospital;
 
-	private MedicamentoPaciente medicamento_paciente;
-
-	public Admins(String usuario, String senha, String nome, float salario, int idade, Hospital hospital, MedicamentoPaciente medicamento_paciente) {
+	public Admin(String usuario, String senha, String nome, float salario, int idade) {
 		this.usuario = usuario;
 		this.senha = senha;
 		this.nome = nome;
 		this.salario = salario;
 		this.idade = idade;
-		this.hospital = hospital;
-		this.medicamento_paciente = medicamento_paciente;
 	}
 
 
@@ -81,21 +77,6 @@ public class Admins {
 //	}
 
 
-	public Hospital getHospital() {
-		return hospital;
-	}
-
-	public void setHospital(Hospital hospital) {
-		this.hospital = hospital;
-	}
-
-	public MedicamentoPaciente getMedicamento_paciente() {
-		return medicamento_paciente;
-	}
-
-	public void setMedicamento_paciente(MedicamentoPaciente medicamento_paciente) {
-		this.medicamento_paciente = medicamento_paciente;
-	}
 //
 //	public controller_login getController_login() {
 //		return controller_login;

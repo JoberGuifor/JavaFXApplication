@@ -16,12 +16,12 @@ public class Leito {
 
 	private int numero;
 
-	private Admins admin;
+	private Admin admin;
 
 	private PacienteOUExpaciente PacienteOUExpaciente;
 
 
-	public Leito(double preço, int quarto, boolean ocupado, int numero, PacienteOUExpaciente pacienteOUExpaciente) {
+	public Leito(double preço, int quarto, boolean ocupado, int numero) {
 		this.preço = preço;
 		this.quarto = quarto;
 		this.ocupado = ocupado;
@@ -36,11 +36,11 @@ public class Leito {
 		PacienteOUExpaciente = pacienteOUExpaciente;
 	}
 
-	public Admins getAdmin() {
+	public Admin getAdmin() {
 		return admin;
 	}
 
-	public void setAdmin(Admins admin) {
+	public void setAdmin(Admin admin) {
 		this.admin = admin;
 	}
 

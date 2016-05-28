@@ -12,11 +12,44 @@ package entity;
 public class Aplicacao {
     public static void main(String[]args){
      
-   // Hospital hospital = new Hospital(leitos_lista, admin_lista);
-//        Admin admin = new Admin("a","a", 2003, 20, 0, hospital, args);
-       
-Leito leito = new Leito(0, 0, true, 0, pacienteOUExpaciente);
-PacienteOUExpaciente paciente = new PacienteOUExpaciente( leito, convenio, cpf, nome);
-       // System.out.println(.ddoo);
+        Admin jorge;
+        jorge = new Admin("usuario", "senha", "nome", 10000, 30);
+
+        Hospital Sao_Joaquim;
+        Sao_Joaquim = new Hospital();
+        Sao_Joaquim.addAdmin(jorge);
+
+//tela de inserção de leitos
+Leito leito = new Leito(100, 1, false, 1);
+Leito leito2 = new Leito(100, 2, false, 1);
+Leito leito3 = new Leito(110, 3, false, 1);
+Leito leito4 = new Leito(110, 4, false, 1);
+Leito leito5 = new Leito(100, 6, false, 2);
+Leito leito6 = new Leito(100, 7, false, 2);
+Leito leito7 = new Leito(100, 8, false, 2);
+Leito leito8 = new Leito(100, 9, false, 2);
+
+//conjunto
+Leitos urgencia = new Leitos();
+Leitos queimaduras = new Leitos();
+
+urgencia.addleito(leito);
+urgencia.addleito(leito2);
+urgencia.addleito(leito3);
+urgencia.addleito(leito4);
+urgencia.addleito(leito5);
+urgencia.addleito(leito6);
+queimaduras.addleito(leito7);
+queimaduras.addleito(leito8);
+
+ConvenioPaciente convenio = new ConvenioPaciente(1, 'A');
+PacienteOUExpaciente paciente = new PacienteOUExpaciente( leito, convenio, "143322", "219942");
+
+leito.setPaciente(paciente);
+leito.setOcupado(true);
+
+paciente.addHistorico_doença("Diabetes");
+
+System.out.println(paciente.getHistorico_doenca());
 }
 }

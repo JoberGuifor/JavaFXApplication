@@ -5,9 +5,9 @@ import Controller.controller_login;
 
 public class Admin {
 
-	private char usuario;
+	private String usuario;
 
-	private char senha;
+	private String senha;
 
 	private char nome;
 
@@ -15,17 +15,24 @@ public class Admin {
 
 	private int idade;
 
-	private Aplicação aplicação;
+	private Aplicação aplicacao;
 
 	private Leito leito;
-
-	private Leito[] leito;
-
-	private Hospital hospital;
 
 	private Hospital hospital;
 
 	private Medicamento_paciente medicamento_paciente;
+
+	public Admin(String usuario, String senha, char nome, float salario, int idade, Leito leito, Hospital hospital, Medicamento_paciente medicamento_paciente) {
+		this.usuario = usuario;
+		this.senha = senha;
+		this.nome = nome;
+		this.salario = salario;
+		this.idade = idade;
+		this.leito = leito;
+		this.hospital = hospital;
+		this.medicamento_paciente = medicamento_paciente;
+	}
 
 
 	public char getUsuario() {

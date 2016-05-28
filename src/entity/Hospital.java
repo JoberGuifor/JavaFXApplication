@@ -19,7 +19,7 @@ public Hospital(){}
 
 
 	public void addleito(Leito leito) {
-		Leitos.add(leito);
+		leitos_lista.add(leito);
 	}
 
 }

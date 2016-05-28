@@ -1,7 +1,7 @@
 package entity;
-
-import Controller.controle_adm;
-import Controller.controller_login;
+//
+//import Controller.controle_adm;
+//import Controller.controller_login;
 
 public class Admin {
 
@@ -17,13 +17,11 @@ public class Admin {
 
 	private Aplicação aplicacao;
 
-	private Leito leito;
-
 	private Hospital hospital;
 
 	private Medicamento_paciente medicamento_paciente;
 
-	public Admin(String usuario, String senha, char nome, float salario, int idade, Leito leito, Hospital hospital, Medicamento_paciente medicamento_paciente) {
+	public Admin(String usuario, String senha, char nome, float salario, int idade, Hospital hospital, Medicamento_paciente medicamento_paciente) {
 		this.usuario = usuario;
 		this.senha = senha;
 		this.nome = nome;

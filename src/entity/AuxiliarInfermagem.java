@@ -50,14 +50,14 @@ public class AuxiliarInfermagem {
 	public void setSalario(float salario) {
 		this.salario = salario;
 	}
-
-	public Aplicação[] getAplicação() {
-		return aplicação;
-	}
-
-	public void setAplicação(Aplicação[] aplicação) {
-		this.aplicação = aplicação;
-	}
+//
+//	public Aplicacao[] getAplicação() {
+//		return aplicacao;
+//	}
+//
+//	public void setAplicação(Aplicacao[] aplicação) {
+//		this.aplicacao = aplicação;
+//	}
 
 
 	public PacienteOUExpaciente getPacienteOUExpaciente() {

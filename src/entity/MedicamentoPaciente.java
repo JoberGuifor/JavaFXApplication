@@ -4,7 +4,7 @@ package entity;
  *
  */
 public class MedicamentoPaciente {
-	public MedicamentoPaciente(String tarja, boolean vendacomreceita, char nome, float preco, Admin admin, Conta conta) {
+	public MedicamentoPaciente(String tarja, boolean vendacomreceita, String nome, float preco, Admin admin, Conta conta) {
 		this.tarja = tarja;
 		this.vendacomreceita = vendacomreceita;
 		this.nome = nome;
@@ -33,7 +33,7 @@ public class MedicamentoPaciente {
 		return nome;
 	}
 
-	public void setNome(char nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
@@ -65,7 +65,7 @@ public class MedicamentoPaciente {
 
 	private boolean vendacomreceita;
 
-	private char nome :String;
+	private String nome ;
 
 	private float preco;
 
@@ -73,5 +73,4 @@ public class MedicamentoPaciente {
 
 	private Conta conta;
 
-	private Conta conta;
 }

@@ -1,7 +1,0 @@
-package entity;
-public class Aplicacao{
-public static void main(String[]args){
-       // Admin admin = new Admin("a","a", );
-       PacienteOUExpaciente paciente = new PacienteOUExpaciente();
-        System.out.println(.get);
-}}

@@ -22,8 +22,6 @@ public class Leito {
 
 	private Admin admin;
 
-	private Admin admin;
-
 	private PacienteOUExpaciente PacienteOUExpaciente;
 
 	private Hospital hospital;

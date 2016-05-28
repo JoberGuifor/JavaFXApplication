@@ -5,6 +5,8 @@
  */
 package controller;
 
+import entity.Hospital;
+import entity.Leito;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -30,11 +32,11 @@ public class FXMLDocumentController implements Initializable {
         System.out.println("You clicked me!");
         label.setText("Hello World!");
     }
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        Hospital x = new Hospital;
-        leito a()
-    }    
+//    
+//    @Override
+//    public void initialize(URL url, ResourceBundle rb) {
+//        Hospital x = new Hospital;
+//        Leito a()
+//    }    
     
 }

@@ -20,7 +20,7 @@ public class Leito {
 
 	private int numero;
 
-	private Admin admin;
+	private Admins admin;
 
 	private PacienteOUExpaciente PacienteOUExpaciente;
 
@@ -28,7 +28,7 @@ public class Leito {
 
 	private Conta[] conta;
 
-	public Leito(PacienteOUExpaciente paciente, int quantidadepaciente, int contpaciente, double preço, int quarto, boolean ocupado, int numero, Admin admin, Admin admin1, PacienteOUExpaciente pacienteOUExpaciente, Hospital hospital, Conta[] conta) {
+	public Leito(PacienteOUExpaciente paciente, int quantidadepaciente, int contpaciente, double preço, int quarto, boolean ocupado, int numero, Admins admin, Admins admin1, PacienteOUExpaciente pacienteOUExpaciente, Hospital hospital, Conta[] conta) {
 		this.paciente = paciente;
 		this.quantidadepaciente = quantidadepaciente;
 		this.contpaciente = contpaciente;
@@ -68,11 +68,11 @@ public class Leito {
 		PacienteOUExpaciente = pacienteOUExpaciente;
 	}
 
-	public Admin getAdmin() {
+	public Admins getAdmin() {
 		return admin;
 	}
 
-	public void setAdmin(Admin admin) {
+	public void setAdmin(Admins admin) {
 		this.admin = admin;
 	}
 

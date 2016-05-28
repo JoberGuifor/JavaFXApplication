@@ -8,9 +8,10 @@ public class Leitos {
 	 * @param listaleitos
      */
     
-        ArrayList<leito> leitos = new ArrayList<>;
-	public Leitos(Leitos listalLeitos, Hospital hospital) {
-		this.leitos = leitos;
+        private ArrayList<Leito> leitos;
+        
+	public Leitos(Leito leito, Hospital hospital) {
+		this.leito = leito;
 		this.hospital = hospital;
 	}
 
@@ -19,7 +20,7 @@ public class Leitos {
 //		return leitos.;
 //	}
 
-	private Hospital hospital;
+	private final Hospital hospital;
 
 	/**
 	 *

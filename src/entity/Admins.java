@@ -3,7 +3,7 @@ package entity;
 //import Controller.controle_adm;
 //import Controller.controller_login;
 
-public class Admin {
+public class Admins {
 
 	private String usuario;
 
@@ -21,7 +21,7 @@ public class Admin {
 
 	private MedicamentoPaciente medicamento_paciente;
 
-	public Admin(String usuario, String senha, String nome, float salario, int idade, Hospital hospital, MedicamentoPaciente medicamento_paciente) {
+	public Admins(String usuario, String senha, String nome, float salario, int idade, Hospital hospital, MedicamentoPaciente medicamento_paciente) {
 		this.usuario = usuario;
 		this.senha = senha;
 		this.nome = nome;
@@ -80,13 +80,6 @@ public class Admin {
 //		this.aplicacao = aplicacao;
 //	}
 
-	public Leito getLeito() {
-		return leito;
-	}
-
-	public void setLeito(Leito leito) {
-		this.leito = leito;
-	}
 
 	public Hospital getHospital() {
 		return hospital;

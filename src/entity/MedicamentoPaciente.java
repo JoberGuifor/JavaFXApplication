@@ -29,7 +29,7 @@ public class MedicamentoPaciente {
 		this.vendacomreceita = vendacomreceita;
 	}
 
-	public char getNome() {
+	public String getNome() {
 		return nome;
 	}
 

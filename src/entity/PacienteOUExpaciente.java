@@ -22,7 +22,7 @@ public class PacienteOUExpaciente {
 
     private AuxiliarInfermagem auxiliarInfermagem;
 
-    public PacienteOuExpaciente(AuxiliarInfermagem auxiliarInfermagem, Conta conta,Leito leito, ConvenioPaciente convenio, ArrayList<String> historico_doenca, String cpf, String nome) {
+    public PacienteOUExpaciente(AuxiliarInfermagem auxiliarInfermagem, Conta conta,Leito leito, ConvenioPaciente convenio, ArrayList<String> historico_doenca, String cpf, String nome) {
         this.auxiliarInfermagem = auxiliarInfermagem;
         this.conta = conta;
         this.leito = leito;

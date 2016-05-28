@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 class Listamedicamento {
 
-    private ArrayList <Listamedicamento> MedicamentoPaciente = new ArrayList(Medicamento);
+    private ArrayList <Listamedicamento> MedicamentoPaciente = new ArrayList<>();
     public Listamedicamento(ArrayList<Listamedicamento> MedicamentoPaciente) {
         this.MedicamentoPaciente = MedicamentoPaciente;
     }

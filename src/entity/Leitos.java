@@ -7,18 +7,17 @@ public class Leitos {
 	 *
 	 * @param listaleitos
      */
+    
+        ArrayList<leito> leitos = new ArrayList<>;
 	public Leitos(Leitos listalLeitos, Hospital hospital) {
 		this.leitos = leitos;
 		this.hospital = hospital;
 	}
 
-
-	public ArrayList<Leito> leitos() {
-		return leitos;
-	}
-	
-
-	private Leitos leitos;
+//
+//	public void getLeitos(int num){
+//		return leitos.;
+//	}
 
 	private Hospital hospital;
 

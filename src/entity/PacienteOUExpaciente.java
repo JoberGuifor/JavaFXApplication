@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 public class PacienteOUExpaciente {
 
-    private char nome;
+    private String nome;
 
     private String cpf;
 
@@ -44,20 +44,20 @@ public class PacienteOUExpaciente {
         this.nome = nome;
     }
 
-    public char getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(char cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
-    public arraylist<String> getHistorico_doença() {
-        return historico_doença;
+    public ArrayList<String> getHistorico_doença() {
+        return historico_doenca;
     }
 
     public void addHistorico_doença(String doenca) {
-        this.historico_doença.add(doenca);
+        this.historico_doenca.add(doenca);
     }
 
     public boolean getVivo() {
@@ -105,15 +105,12 @@ public class PacienteOUExpaciente {
     }
 
     public ConvenioPaciente[] getConveniopaciente() {
-        return ConvenioPaciente;
+        return this.convenio;
     }
 
-    public void setConvenioPaciente(ConvenioPaciente ConvenioPaciente) {
-        this.ConvenioPaciente = ConvenioPaciente;
-    }
 
-    public void setConvenioPaciente(ConvenioPaciente[] ConvenioPaciente) {
-        this.ConvenioPaciente = ConvenioPaciente;
+    public void setConvenioPaciente(ConvenioPaciente convenio) {
+        this.convenio = convenio;
     }
 }
 

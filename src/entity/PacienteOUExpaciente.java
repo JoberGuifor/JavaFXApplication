@@ -14,20 +14,15 @@ public class PacienteOUExpaciente {
     private ArrayList<String> historico_doenca;
 
     private Leito leito;
-
-
+    
     private Conta conta;
 
     private ConvenioPaciente convenio;
 
-    private AuxiliarInfermagem auxiliarInfermagem;
+    public PacienteOUExpaciente(Leito leito, ConvenioPaciente convenio, String cpf, String nome) {
 
-    public PacienteOUExpaciente(AuxiliarInfermagem auxiliarInfermagem, Conta conta,Leito leito, ConvenioPaciente convenio, ArrayList<String> historico_doenca, String cpf, String nome) {
-        this.auxiliarInfermagem = auxiliarInfermagem;
-        this.conta = conta;
         this.leito = leito;
         this.convenio = convenio;
-        this.historico_doenca = historico_doenca;
         this.cpf = cpf;
         this.nome = nome;
     }
@@ -80,17 +75,10 @@ public class PacienteOUExpaciente {
         this.conta = conta;
     }
 
-    public AuxiliarInfermagem getAuxiliarInfermagem() {
-        return auxiliarInfermagem;
-    }
-
-    public void setAuxiliarInfermagem(AuxiliarInfermagem auxiliarInfermagem) {
-        this.auxiliarInfermagem = auxiliarInfermagem;
-    }
-
     public void setConvenioPaciente(ConvenioPaciente convenio) {
         this.convenio = convenio;
     }
+    
       public ArrayList<String> getHistorico_doenca() {
         return historico_doenca;
     }

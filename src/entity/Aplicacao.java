@@ -14,7 +14,9 @@ public class Aplicacao {
      
    // Hospital hospital = new Hospital(leitos_lista, admin_lista);
 //        Admin admin = new Admin("a","a", 2003, 20, 0, hospital, args);
-       PacienteOUExpaciente paciente = new PacienteOUExpaciente();
+       
+Leito leito = new Leito(0, 0, true, 0, pacienteOUExpaciente);
+PacienteOUExpaciente paciente = new PacienteOUExpaciente( leito, convenio, cpf, nome);
        // System.out.println(.ddoo);
 }
 }

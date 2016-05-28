@@ -8,10 +8,6 @@ public class Leito {
 
 	private PacienteOUExpaciente paciente;
 
-	private int quantidadepaciente;
-
-	private int contpaciente;
-
 	private double preço;
 
 	private int quarto;
@@ -24,40 +20,12 @@ public class Leito {
 
 	private PacienteOUExpaciente PacienteOUExpaciente;
 
-	private Hospital hospital;
 
-	private Conta[] conta;
-
-	public Leito(PacienteOUExpaciente paciente, int quantidadepaciente, int contpaciente, double preço, int quarto, boolean ocupado, int numero, Admins admin, Admins admin1, PacienteOUExpaciente pacienteOUExpaciente, Hospital hospital, Conta[] conta) {
-		this.paciente = paciente;
-		this.quantidadepaciente = quantidadepaciente;
-		this.contpaciente = contpaciente;
+	public Leito(double preço, int quarto, boolean ocupado, int numero, PacienteOUExpaciente pacienteOUExpaciente) {
 		this.preço = preço;
 		this.quarto = quarto;
 		this.ocupado = ocupado;
 		this.numero = numero;
-		this.admin = admin;
-		this.admin = admin1;
-		PacienteOUExpaciente = pacienteOUExpaciente;
-		this.hospital = hospital;
-		this.conta = conta;
-	}
-
-
-	public Conta[] getConta() {
-		return conta;
-	}
-
-	public void setConta(Conta[] conta) {
-		this.conta = conta;
-	}
-
-	public Hospital getHospital() {
-		return hospital;
-	}
-
-	public void setHospital(Hospital hospital) {
-		this.hospital = hospital;
 	}
 
 	public PacienteOUExpaciente getPacienteOUExpaciente() {
@@ -106,22 +74,6 @@ public class Leito {
 
 	public void setPreço(double preço) {
 		this.preço = preço;
-	}
-
-	public int getContpaciente() {
-		return contpaciente;
-	}
-
-	public void setContpaciente(int contpaciente) {
-		this.contpaciente = contpaciente;
-	}
-
-	public int getQuantidadepaciente() {
-		return quantidadepaciente;
-	}
-
-	public void setQuantidadepaciente(int quantidadepaciente) {
-		this.quantidadepaciente = quantidadepaciente;
 	}
 
 	public PacienteOUExpaciente getPaciente() {

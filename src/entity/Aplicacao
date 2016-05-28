@@ -1,0 +1,6 @@
+package entity;
+public class Aplicacao{
+public static void main(String[]args){
+       // Admin admin = new Admin("a","a", );
+        System.out.println(.get;
+}}

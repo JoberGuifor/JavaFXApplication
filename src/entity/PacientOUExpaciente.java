@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  *
  */
-public class PacienteOuExpaciente {
+public class PacientOUExpaciente {
 
     private char nome;
 
@@ -84,11 +84,11 @@ public class PacienteOuExpaciente {
         return leito;
     }
 
-    public void setLeito(Leito leito) {
+    public void setLeito(Leito[] leito) {
         this.leito = leito;
     }
 
-    public void setLeito(Leito[] leito) {
+    public void setLeito(Leito leito) {
         this.leito = leito;
     }
 

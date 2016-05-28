@@ -12,8 +12,6 @@ public class PacienteOUExpaciente {
     private String cpf;
 
     private ArrayList<String> historico_doenca;
-    
-    private boolean vivo;
 
     private Leito leito;
 
@@ -22,25 +20,23 @@ public class PacienteOUExpaciente {
 
     private ConvenioPaciente convenio;
 
-
     private AuxiliarInfermagem auxiliarInfermagem;
 
-    public PacienteOuExpaciente(AuxiliarInfermagem auxiliarInfermagem, Conta conta, ConvenioPaciente convenio, boolean vivo, ArrayList<String> historico_doenca, String cpf, String nome) {
+    public PacienteOuExpaciente(AuxiliarInfermagem auxiliarInfermagem, Conta conta,Leito leito, ConvenioPaciente convenio, ArrayList<String> historico_doenca, String cpf, String nome) {
         this.auxiliarInfermagem = auxiliarInfermagem;
         this.conta = conta;
         this.leito = leito;
         this.convenio = convenio;
-        this.vivo = vivo;
         this.historico_doenca = historico_doenca;
         this.cpf = cpf;
         this.nome = nome;
     }
 
-    public char getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(char nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
@@ -60,14 +56,6 @@ public class PacienteOUExpaciente {
         this.historico_doenca.add(doenca);
     }
 
-    public boolean getVivo() {
-        return vivo;
-    }
-
-    public void setVivo(boolean vivo) {
-        this.vivo = vivo;
-    }
-
     public ConvenioPaciente getConvenio() {
         return convenio;
     }
@@ -78,10 +66,6 @@ public class PacienteOUExpaciente {
 
     public Leito getLeito() {
         return leito;
-    }
-
-    public void setLeito(Leito[] leito) {
-        this.leito = leito;
     }
 
     public void setLeito(Leito leito) {
@@ -104,15 +88,22 @@ public class PacienteOUExpaciente {
         this.auxiliarInfermagem = auxiliarInfermagem;
     }
 
-    public ConvenioPaciente[] getConveniopaciente() {
-        return this.convenio;
-    }
-
-
     public void setConvenioPaciente(ConvenioPaciente convenio) {
         this.convenio = convenio;
     }
+      public ArrayList<String> getHistorico_doenca() {
+        return historico_doenca;
+    }
+
+    public void setHistorico_doenca(ArrayList<String> historico_doenca) {
+        this.historico_doenca = historico_doenca;
+    }
+
+    public ConvenioPaciente getGetConvenioPaciente() {
+        return convenio;
+    }
+
 }
 
 
-}
+

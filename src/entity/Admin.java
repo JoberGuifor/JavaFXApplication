@@ -9,51 +9,50 @@ public class Admin {
 
 	private String senha;
 
-	private char nome;
+	private String nome;
 
 	private float salario;
 
 	private int idade;
 
-	private Aplicação aplicacao;
+	private Aplicacao aplicacao;
 
 	private Hospital hospital;
 
-	private Medicamento_paciente medicamento_paciente;
+	private MedicamentoPaciente medicamento_paciente;
 
-	public Admin(String usuario, String senha, char nome, float salario, int idade, Hospital hospital, Medicamento_paciente medicamento_paciente) {
+	public Admin(String usuario, String senha, String nome, float salario, int idade, Hospital hospital, MedicamentoPaciente medicamento_paciente) {
 		this.usuario = usuario;
 		this.senha = senha;
 		this.nome = nome;
 		this.salario = salario;
 		this.idade = idade;
-		this.leito = leito;
 		this.hospital = hospital;
 		this.medicamento_paciente = medicamento_paciente;
 	}
 
 
-	public char getUsuario() {
+	public String getUsuario() {
 		return usuario;
 	}
 
-	public void setUsuario(char usuario) {
+	public void setUsuario(String usuario) {
 		this.usuario = usuario;
 	}
 
-	public char getSenha() {
+	public String getSenha() {
 		return senha;
 	}
 
-	public void setSenha(char senha) {
+	public void setSenha(String senha) {
 		this.senha = senha;
 	}
 
-	public char getNome() {
+	public String getNome() {
 		return nome;
 	}
 
-	public void setNome(char nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
@@ -73,19 +72,19 @@ public class Admin {
 		this.idade = idade;
 	}
 
-	public Aplicação getAplicação() {
-		return aplicação;
-	}
-
-	public void setAplicação(Aplicação aplicação) {
-		this.aplicação = aplicação;
-	}
+//	public Aplicacao getAplicacao() {
+//		return aplicacao;
+//	}
+//
+//	public void setAplicacao(Aplicacao aplicacao) {
+//		this.aplicacao = aplicacao;
+//	}
 
 	public Leito getLeito() {
 		return leito;
 	}
 
-	public void setLeito(Leito[] leito) {
+	public void setLeito(Leito leito) {
 		this.leito = leito;
 	}
 
@@ -97,31 +96,29 @@ public class Admin {
 		this.hospital = hospital;
 	}
 
-	public Medicamento_paciente getMedicamento_paciente() {
+	public MedicamentoPaciente getMedicamento_paciente() {
 		return medicamento_paciente;
 	}
 
-	public void setMedicamento_paciente(Medicamento_paciente medicamento_paciente) {
+	public void setMedicamento_paciente(MedicamentoPaciente medicamento_paciente) {
 		this.medicamento_paciente = medicamento_paciente;
 	}
+//
+//	public controller_login getController_login() {
+//		return controller_login;
+//	}
+//
+//	public void setController_login(controller_login controller_login) {
+//		this.controller_login = controller_login;
+//	}
+//
+//	public controle_adm getControle_adm() {
+//		return controle_adm;
+//	}
+//
+//	public void setControle_adm(controle_adm controle_adm) {
+//		this.controle_adm = controle_adm;
+//	}
 
-	public controller_login getController_login() {
-		return controller_login;
-	}
-
-	public void setController_login(controller_login controller_login) {
-		this.controller_login = controller_login;
-	}
-
-	public controle_adm getControle_adm() {
-		return controle_adm;
-	}
-
-	public void setControle_adm(controle_adm controle_adm) {
-		this.controle_adm = controle_adm;
-	}
-
-	public void setLeito(Leito leito) {
-		this.leito = leito;
-	}
 }
+

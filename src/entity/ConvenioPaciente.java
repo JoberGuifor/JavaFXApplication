@@ -7,11 +7,11 @@ package entity;
 public class ConvenioPaciente {
 
 
-	private int abrangencia;
+	private final int abrangencia;
 
-	private PacienteOUExpaciente contratante;
+	private final PacienteOUExpaciente contratante;
 
-	private char tipo_conta;
+	private final char tipo_conta;
 
 	public ConvenioPaciente(int abrangencia, PacienteOUExpaciente contratante, char tipo_conta) {
 		this.abrangencia = abrangencia;

@@ -9,12 +9,11 @@ public class PacienteOUExpaciente {
 
     private char nome;
 
-    private char cpf;
+    private String cpf;
 
     private ArrayList<String> historico_doenca;
+    
     private boolean vivo;
-
-    private ArrayList convenio;
 
     private Leito leito;
 
@@ -23,11 +22,10 @@ public class PacienteOUExpaciente {
 
     private ConvenioPaciente convenio;
 
-    private Conta conta;
 
     private AuxiliarInfermagem auxiliarInfermagem;
 
-    public PacienteOuExpaciente(AuxiliarInfermagem auxiliarInfermagem, Conta conta, ConvenioPaciente convenio, boolean vivo, ArrayList<String> historico_doenca, char cpf, char nome) {
+    public PacienteOuExpaciente(AuxiliarInfermagem auxiliarInfermagem, Conta conta, ConvenioPaciente convenio, boolean vivo, ArrayList<String> historico_doenca, String cpf, String nome) {
         this.auxiliarInfermagem = auxiliarInfermagem;
         this.conta = conta;
         this.leito = leito;
@@ -62,7 +60,7 @@ public class PacienteOUExpaciente {
         this.historico_doença.add(doenca);
     }
 
-    public boolean isVivo() {
+    public boolean getVivo() {
         return vivo;
     }
 
@@ -70,7 +68,7 @@ public class PacienteOUExpaciente {
         this.vivo = vivo;
     }
 
-    public ArrayList getConvenio() {
+    public ConvenioPaciente getConvenio() {
         return convenio;
     }
 

@@ -18,7 +18,6 @@ public class PacienteOUExpaciente {
 
     private Leito leito;
 
-    private Leito[] leito;
 
     private Conta conta;
 
@@ -28,7 +27,7 @@ public class PacienteOUExpaciente {
 
     private AuxiliarInfermagem auxiliarInfermagem;
 
-    public pacienteOuExpaciente(AuxiliarInfermagem auxiliarInfermagem, Conta conta, ConvenioPaciente ConvenioPaciente, ConvenioPaciente[] ConvenioPaciente1, Leito[] leito, ArrayList convenio, boolean vivo, arraylist<String> historico_doença, char cpf, char nome) {
+    public PacienteOuExpaciente(AuxiliarInfermagem auxiliarInfermagem, Conta conta, ConvenioPaciente ConvenioPaciente, ConvenioPaciente[] ConvenioPaciente1, Leito[] leito, ArrayList convenio, boolean vivo, arraylist<String> historico_doença, char cpf, char nome) {
         this.auxiliarInfermagem = auxiliarInfermagem;
         this.conta = conta;
         this.ConvenioPaciente = ConvenioPaciente;

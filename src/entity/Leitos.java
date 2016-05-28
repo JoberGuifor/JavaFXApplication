@@ -10,8 +10,7 @@ public class Leitos {
     
         private ArrayList<Leito> leitos;
         
-	public Leitos(Leito leito, Hospital hospital) {
-		this.leito = leito;
+	public Leitos(Hospital hospital) {
 		this.hospital = hospital;
 	}
 
@@ -19,8 +18,11 @@ public class Leitos {
 //	public void getLeitos(int num){
 //		return leitos.;
 //	}
-
+        
 	private final Hospital hospital;
+        void addleito(Leito leito){
+            leitos.add(leito);
+        }
 
 	/**
 	 *

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  *
  */
-public class pacienteOuExpaciente {
+public class PacienteOuExpaciente {
 
     private char nome;
 

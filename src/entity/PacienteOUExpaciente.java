@@ -11,7 +11,7 @@ public class PacienteOUExpaciente {
 
     private String cpf;
 
-    private ArrayList<String> historico_doenca;
+    private ArrayList<String> historico_doenca = new ArrayList<>();
 
     private Leito leito;
     

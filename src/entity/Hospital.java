@@ -8,9 +8,12 @@ import java.util.ArrayList;
 public class Hospital {
         
 	private Leitos leitos_lista;
-	private ArrayList<Admin>admin_lista;
+	private final ArrayList<Admin>admin_lista;
+        
 	
-public Hospital(){}
+public Hospital(){
+admin_lista = new ArrayList<>();
+}
 
 
 
@@ -22,6 +25,10 @@ public Hospital(){}
         }
         public void addAdmin(Admin admin){
                 admin_lista.add(admin);
+        }
+
+    void addAdmin(int i, Admin admin) {
+        this.admin_lista.add(i ,admin);
         }
 
 }

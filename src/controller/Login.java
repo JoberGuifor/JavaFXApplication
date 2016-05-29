@@ -1,13 +1,14 @@
 package controller;
 
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+
+import java.net.URL;
+import java.util.ResourceBundle;
 
 /**
  *
@@ -21,8 +22,6 @@ private TextField txLogin, txNome, txidade, txLoginUsuario;
 @FXML
 private PasswordField txSenha, txSenhaUsuario;
 
-@Override
-public void initialze(URL url, ResourceBundle bundle){}
 @FXML
 protected void btEntrarAction(ActionEvent evt){
 //logar no sistema
@@ -48,4 +47,9 @@ protected void linkCliqueAquiAction(ActionEvent evt){
 paneNovoUsuario.setVisible(true);
 
 }
+
+       @Override
+       public void initialize(URL location, ResourceBundle resources) {
+
+       }
 }

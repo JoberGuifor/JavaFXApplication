@@ -14,9 +14,6 @@ public class AuxiliarInfermagem {
 
 	private float salario;
 
-
-	private PacienteOUExpaciente PacienteOUExpaciente;
-
 	public char getUsuario() {
 		return usuario;
 	}
@@ -45,10 +42,7 @@ public class AuxiliarInfermagem {
 		return salario;
 	}
 
-	public void setSalario(float salario) {
-		this.salario = salario;
-	}
-//
+	//
 //	public Aplicacao[] getAplicação() {
 //		return aplicacao;
 //	}
@@ -58,15 +52,9 @@ public class AuxiliarInfermagem {
 //	}
 
 
-	public PacienteOUExpaciente getPacienteOUExpaciente() {
-		return PacienteOUExpaciente;
-	}
 /**
  * set para o paciente
  *
  * */
-	public void setPacienteOUExpaciente(PacienteOUExpaciente PacienteOUExpaciente) {
-		this.PacienteOUExpaciente = PacienteOUExpaciente;
-	}
 
 }

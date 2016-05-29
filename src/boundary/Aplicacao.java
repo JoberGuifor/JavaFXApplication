@@ -21,9 +21,8 @@ launch(args);
 }
 @Override
 public void start(Stage stage) throws Exception {
-Parent parent =
-    FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
-Scene scene = new Scene(parent);
+Parent parent = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
+    Scene scene = new Scene(parent);
 stage.setScene(scene);
     stage.setTitle("Login");
 stage.show();

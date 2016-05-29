@@ -11,7 +11,7 @@ public class Conta {
     private int qtdfuncionarios;
     private float preçofuncionario;
     private Leito leito;
-    private MedicamentoPaciente MedicamentoPaciente;
+    private Medicamento MedicamentoPaciente;
     private PacienteOUExpaciente PacienteOUExpaciente;
 
     /**
@@ -25,7 +25,7 @@ public class Conta {
      * @param medicamentoPaciente
      * @param pacienteOUExpaciente
      */
-    public Conta(char data, float total, boolean paga, char descricao, int qtdfuncionarios, float preçofuncionario, Leito leito, MedicamentoPaciente medicamentoPaciente, PacienteOUExpaciente pacienteOUExpaciente) {
+    public Conta(char data, float total, boolean paga, char descricao, int qtdfuncionarios, float preçofuncionario, Leito leito, Medicamento medicamentoPaciente, PacienteOUExpaciente pacienteOUExpaciente) {
         this.data = data;
         this.total = total;
         this.paga = paga;
@@ -93,11 +93,11 @@ public class Conta {
         this.leito = leito;
     }
 
-    public MedicamentoPaciente getMedicamentoPaciente() {
+    public Medicamento getMedicamentoPaciente() {
         return MedicamentoPaciente;
     }
 
-    public void setMedicamentoPaciente(MedicamentoPaciente medicamentoPaciente) {
+    public void setMedicamentoPaciente(Medicamento medicamentoPaciente) {
         MedicamentoPaciente = medicamentoPaciente;
     }
 

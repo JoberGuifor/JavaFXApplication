@@ -1,48 +1,45 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package entity;
 
 /**
  *
- * @author aluno
  */
 public class Medicamento {
+	public Medicamento(String tarja, String nome, float preco) {
+		this.tarja = tarja;
+		this.nome = nome;
+		this.preco = preco;
+	}
 
-    private String nome;
-    private String tarja;
+	public String getTarja() {
+		return tarja;
+	}
 
-    /**
-     * ?
-     * @param nome
-     * @param tarja
-     */
-    public Medicamento(String nome, String tarja) {
-        this.nome = nome;
-        this.tarja = tarja;
-    }
+	public void setTarja(String tarja) {
+		this.tarja = tarja;
+	}
 
-    /**
-     * getnome
-     * @return
-     */
-    public String getNome() {
-        return nome;
-    }
-/**
- *
- * */
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+	public String getNome() {
+		return nome;
+	}
 
-    public String getTarja() {
-        return tarja;
-    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
-    public void setTarja(String tarja) {
-        this.tarja = tarja;
-    }
+	public float getPreco() {
+		return preco;
+	}
+
+	public void setPreco(float preco) {
+		this.preco = preco;
+	}
+
+
+	private String tarja;
+
+	private String nome ;
+
+	private float preco;
+
+
 }

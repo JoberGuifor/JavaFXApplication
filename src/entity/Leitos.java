@@ -13,25 +13,12 @@ public class Leitos {
         
 	}
 
-
-//
-//	public void getLeitos(int num){
-//		return leitos.;
-//	}
-        ;
-	
-
-//
-//	public void getLeitos(int num){
-//		return leitos.;
-//	}
-        ;
-	
-
-//	}
-        
-	public void addleito(Leito leito){
-            leitos.add(leito);
+    /**
+     *
+     * @param leito
+     */
+    public void addleito(Leito leito){
+            boolean add = leitos.add(leito);
         }
 
    public void remove(Leito leito) {

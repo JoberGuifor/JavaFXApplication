@@ -34,7 +34,7 @@ public class Login{
             Label.setText("OK");
             Label.setText(userName.getText());
             invalid_label.setText("Credenciais Aceitas");
-            boundary.Admin.launch();
+            boundary.Tela_Admin.launch();
 
         }
         else

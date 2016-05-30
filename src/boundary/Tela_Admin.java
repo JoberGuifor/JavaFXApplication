@@ -15,11 +15,13 @@ import javafx.stage.Stage;
  *
  * @author lc
  */
-public class Admin extends Application {
+public class Tela_Admin extends Application {
+
 
 @Override
 public void start(Stage stage)  {
     try{
+
         Parent parent = FXMLLoader.load(getClass().getResource("Admin.fxml"));
         Scene cena = new Scene(parent);
         stage.setScene(cena);

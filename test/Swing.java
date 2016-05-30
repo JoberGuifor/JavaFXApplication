@@ -63,6 +63,5 @@ public class Swing{
 
         paciente.addHistorico_doença("Diabetes");
 
-        JOptionPane.showMessageDialog(null, paciente.getHistorico_doenca());
     }
     }

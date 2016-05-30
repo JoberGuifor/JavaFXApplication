@@ -4,9 +4,8 @@
 
 package controller;
 
-import entity.Admin;
-import entity.Leitos;
-import entity.PacienteOUExpaciente;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -14,6 +13,8 @@ import javafx.scene.input.MouseEvent;
 
 public class Controller_Admin {
 
+
+    ObservableList<String> pacigetItems = FXCollections.observableArrayList("Marcos Joaquim", "Tereza do Aeio");
     @FXML // fx:id="arquivo"
     private Menu arquivo; // Value injected by FXMLLoader
 
@@ -51,61 +52,59 @@ public class Controller_Admin {
     private TitledPane Hospitais; // Value injected by FXMLLoader
 
     @FXML // fx:id="leitos"
-    private ComboBox<Leitos> leitos; // Value injected by FXMLLoader
-
-
+    private ComboBox leitos; // Value injected by FXMLLoader
 
     @FXML // fx:id="paciente"
-    private ComboBox<PacienteOUExpaciente> paciente; // Value injected by FXMLLoader
+    private ComboBox paciente; // Value injected by FXMLLoader
 
     @FXML
-    public void callsetsenha(ActionEvent event, Admin admin) {
-//        String senha = null;
-//        String entrada = JOptionPane.showInputDialog("Senha nova: ");
-//        if (entrada != null){
-//            try{
-//               admin.setSenha(entrada);
-//                senha = entrada;
-//                JOptionPane.showMessageDialog(null, senha);
-//            } catch (NumberFormatException e){
-//                JOptionPane.showMessageDialog(null, "Digite números!");
-//            }
-//        }
+    void PreenchePacientes(ActionEvent event) {
+
+        paciente.setValue("Marcos Joaquim");
+        paciente.setItems(pacigetItems);
     }
 
-
     @FXML
-    public void fechatutotatatatata(ActionEvent event) {
-
-        Usuario.setText("Tente novamente");
+    void Preenchehospitais(ActionEvent event) {
 
     }
 
     @FXML
-    public void sair(ActionEvent event) {
-
-        Usuario.setText("Tente novamente");
+    void Preencheleitos(ActionEvent event) {
 
     }
 
     @FXML
-    public void salvar(ActionEvent event) {
-
-        Usuario.setText("Tente novamente");
+    void fechatutotatatatata(ActionEvent event) {
 
     }
 
     @FXML
-   public void salvarcomo(ActionEvent event) {
+    void setsenha(ActionEvent event)
+    {
 
-        Usuario.setText("Tente novamente");
+
+}
+
+
+    @FXML
+    void sair(ActionEvent event) {
+
     }
 
+    @FXML
+    void salvar(ActionEvent event) {
 
-    public void show(MouseEvent event) {
-
-        Usuario.setText("Tente novamente");
     }
 
+    @FXML
+    void salvarcomo(ActionEvent event) {
+
+    }
+
+    @FXML
+    void show(MouseEvent event) {
+
+    }
 
 }

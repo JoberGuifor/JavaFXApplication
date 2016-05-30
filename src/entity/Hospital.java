@@ -6,12 +6,21 @@ import java.util.ArrayList;
  *
  */
 public class Hospital {
-        
-	private Leitos leitos_lista;
+    private String nome;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    private Leitos leitos_lista;
 	private final ArrayList<Admin>admin_lista;
         
 	
-public Hospital(){
+public Hospital(String nome){
 admin_lista = new ArrayList<>();
 }
 

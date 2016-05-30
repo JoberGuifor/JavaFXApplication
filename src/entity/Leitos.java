@@ -6,9 +6,10 @@ public class Leitos {
 
     
         private final ArrayList<Leito> leitos;
+        String nome;
         
-        
-	public Leitos() {
+	public Leitos(String nome){
+        this.nome = nome;
         this.leitos = new ArrayList();
         
 	}
@@ -24,7 +25,12 @@ public class Leitos {
    public void remove(Leito leito) {
        leitos.remove(leito);    }
 
-	/**
+    public String getNome() {
+        return nome;
+    }
+
+
+    /**
 	 *
 	 * @return
      */

@@ -27,7 +27,7 @@
                   <MenuItem fx:id="fecharmenu" mnemonicParsing="false" onAction="#fechatutotatatatata" text="Fechar" />
                   <MenuItem fx:id="salvar" mnemonicParsing="false" onAction="#salvar" text="Salvar alteraçoes" />
                   <MenuItem fx:id="salvarcomo" mnemonicParsing="false" onAction="#salvarcomo" text="Salvar como" />
-                  <SeparatorMenuItem mnemonicParsing="false" onAction="#callsetsenha" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem fx:id="fecharapp" mnemonicParsing="false" onAction="#sair" text="Sair" />
                 </items>
               </Menu>
@@ -38,7 +38,7 @@
               </Menu>
                   <Menu fx:id="conta" mnemonicParsing="false">
                     <items>
-                        <MenuItem fx:id="setsenha" mnemonicParsing="false" text="Alterar senha" />
+                        <MenuItem fx:id="setsenha" mnemonicParsing="false" onAction="#setsenha" text="Alterar senha" />
                       <MenuItem mnemonicParsing="false" text="Sair" />
                     </items>
                      <graphic>
@@ -55,7 +55,7 @@
             <Button layoutX="375.0" layoutY="322.0" mnemonicParsing="false" text="Gerenciar" />
             <Button layoutX="205.0" layoutY="322.0" mnemonicParsing="false" text="Gerenciar" />
             <Button layoutX="35.0" layoutY="322.0" mnemonicParsing="false" text="Gerenciar" />
-            <ComboBox fx:id="paciente" layoutX="375.0" layoutY="268.0" onAction="#PreenchePacientes" prefWidth="150.0" />
+            <ComboBox fx:id="paciente" layoutX="375.0" layoutY="268.0" onAction="#PreenchePacientes" onMouseClicked="#PreenchePacientes" onShown="#PreenchePacientes" prefWidth="150.0" />
             <Separator layoutX="191.0" layoutY="235.0" orientation="VERTICAL" prefHeight="159.0" prefWidth="3.0" />
             <Separator layoutX="362.0" layoutY="241.0" orientation="VERTICAL" prefHeight="159.0" prefWidth="6.0" />
       </children>

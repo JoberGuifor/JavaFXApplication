@@ -83,4 +83,5 @@ public class Leito {
 	public void setPaciente(PacienteOUExpaciente paciente) {
 		this.paciente = paciente;
 	}
+
 }

@@ -5,13 +5,7 @@
  */
 
 
-import entity.Admin;
-import entity.ConvenioPaciente;
-import entity.Hospital;
-import entity.Leito;
-import entity.Leitos;
-import entity.PacienteOUExpaciente;
-import javax.swing.*;
+import entity.*;
 
 //import javafx.fxml.FXMLLoader;
 //import javafx.scene.Parent;

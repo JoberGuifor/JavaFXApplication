@@ -19,7 +19,7 @@ public class Aplicacao extends Application {
 @Override
 public void start(Stage stage)  {
     try{
-        Parent parent = FXMLLoader.load(getClass().getResource("admin.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("raiz.fxml"));
         Scene scene = new Scene(parent);
         stage.setScene(scene);
         stage.setTitle("Login");

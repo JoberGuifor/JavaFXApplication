@@ -6,7 +6,6 @@
 package boundary;
 
 import javafx.application.Application;
-import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -16,17 +15,16 @@ import javafx.stage.Stage;
  *
  * @author lc
  */
-public class Admin 
-    extends Application {
+public class Admin extends Application {
 
 @Override
-public void start(Stage stage)  {
+public void start(Stage stage2)  {
     try{
-        Parent parent = FXMLLoader.load(getClass().getResource("raiz.fxml"));
-        Scene scene = new Scene(parent);
-        stage.setScene(scene);
-        stage.setTitle("Administração hospital");
-        stage.show();
+        Parent parent = FXMLLoader.load(getClass().getResource("Admin.fxml"));
+        Scene cena = new Scene(parent);
+        stage2.setScene(cena);
+        stage2.setTitle("Administração hospital");
+        stage2.show();
         }
     catch (Exception e){
         e.printStackTrace();

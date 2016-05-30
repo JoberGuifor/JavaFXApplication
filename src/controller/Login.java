@@ -23,10 +23,9 @@ public class Login{
 
 
     public void login(ActionEvent event)   {
-        if(userName.getText() != null && pw.getText() != null && userName.getText() != "" && pw.getText() != ""){
+        if((userName.getText() != null) && pw.getText() != null && (userName.getText() != "") && pw.getText() != ""){
               Label.setText("OK");
-            String[] args = null;
-        Admin.main(args);
+       Admin.launch();
         }
         else
             Label.setText("Tente novamente");

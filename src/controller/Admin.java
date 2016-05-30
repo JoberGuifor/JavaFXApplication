@@ -4,7 +4,6 @@
 
 package controller;
 
-import boundary.LoginDialog;
 import entity.Leitos;
 import entity.PacienteOUExpaciente;
 import javafx.event.ActionEvent;

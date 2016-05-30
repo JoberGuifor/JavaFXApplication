@@ -4,10 +4,20 @@
 
 package controller;
 
+import boundary.LoginDialog;
+import entity.Leitos;
+import entity.PacienteOUExpaciente;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuItem;
 import javafx.scene.input.MouseEvent;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionListener;
 
 public class Admin {
 
@@ -48,15 +58,35 @@ public class Admin {
     private TitledPane Hospitais; // Value injected by FXMLLoader
 
     @FXML // fx:id="leitos"
-    private ComboBox<?> leitos; // Value injected by FXMLLoader
+    private ComboBox<Leitos> leitos; // Value injected by FXMLLoader
 
     @FXML // fx:id="paciente"
-    private ComboBox<?> paciente; // Value injected by FXMLLoader
+    private ComboBox<PacienteOUExpaciente> paciente; // Value injected by FXMLLoader
 
     @FXML
     public void callsetsenha(ActionEvent event) {
 
-            Usuario.setText("Tente novamente");
+        final JFrame frame = new JFrame("JDialog Demo");
+        final JButton btnLogin = new JButton("Click to login");
+
+        btnLogin.addActionListener(
+                new ActionListener(){
+                    @Override
+                    public void actionPerformed(java.awt.event.ActionEvent e) {
+                        LoginDialog loginDlg = new LoginDialog(frame);
+                        loginDlg.setVisible(true);
+                        // if logon successfully
+                        if(loginDlg.isSucceeded())
+                            btnLogin.setText("Hi " + loginDlg.getUsername() + "!");
+
+                    }
+                });
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300, 100);
+        frame.setLayout(new FlowLayout());
+        frame.getContentPane().add(btnLogin);
+        frame.setVisible(true);
 
     }
 

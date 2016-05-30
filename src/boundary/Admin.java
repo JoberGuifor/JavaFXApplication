@@ -23,12 +23,13 @@ public void start(Stage stage)  {
         Parent parent = FXMLLoader.load(getClass().getResource("Admin.fxml"));
         Scene cena = new Scene(parent);
         stage.setScene(cena);
-        stage.setTitle("Administração hospital");
+        stage.setTitle("Administração hospitalar");
         stage.show();
         }
     catch (Exception e){
         e.printStackTrace();
     }
+
 
 }
 

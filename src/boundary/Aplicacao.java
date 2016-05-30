@@ -15,17 +15,24 @@ import javafx.stage.Stage;
  * @author lc
  */
 public class Aplicacao extends Application {
-    
-public static void main(String[] args) {
-launch(args);
-}
+
 @Override
-public void start(Stage stage) throws Exception {
-Parent parent = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
-    Scene scene = new Scene(parent);
-stage.setScene(scene);
-    stage.setTitle("Login");
-stage.show();
+public void start(Stage stage)  {
+    try{
+        Parent parent = FXMLLoader.load(getClass().getClassLoader().getResource("/boundary/raiz.fxml"));
+        Scene scene = new Scene(parent);
+        stage.setScene(scene);
+        stage.setTitle("Login");
+        stage.show();
+        }
+    catch (Exception e){
+        e.printStackTrace();
+    }
+
 }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
 }
 

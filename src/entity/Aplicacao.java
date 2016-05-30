@@ -5,8 +5,6 @@
  */
 package entity;
 
-import javax.swing.*;
-
 /**
  *
  * @author lc
@@ -52,6 +50,6 @@ leito.setOcupado(true);
 
 paciente.addHistorico_doença("Diabetes");
 
-JOptionPane.showMessageDialog(null, paciente.getHistorico_doenca());
+//JOptionPane.showMessageDialog(null, paciente.getHistorico_doenca());
 }
 }

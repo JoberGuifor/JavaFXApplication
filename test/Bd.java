@@ -1,6 +1,6 @@
 import com.datastax.driver.core.*;
 
-public class bd {
+public class Bd {
 
 
 	public static void main(String[] args) {

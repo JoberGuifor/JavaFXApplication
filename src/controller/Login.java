@@ -1,5 +1,6 @@
 package controller;
 
+import boundary.Admin;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -22,8 +23,11 @@ public class Login{
 
 
     public void login(ActionEvent event)   {
-        if(userName.getText() != null && pw.getText() != null)
+        if(userName.getText() != null && pw.getText() != null && userName.getText() != "" && pw.getText() != ""){
               Label.setText("OK");
+            String[] args = null;
+        Admin.main(args);
+        }
         else
             Label.setText("Tente novamente");
        }

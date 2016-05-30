@@ -3,8 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package entity;
 
+
+import entity.Admin;
+import entity.ConvenioPaciente;
+import entity.Hospital;
+import entity.Leito;
+import entity.Leitos;
+import entity.PacienteOUExpaciente;
 import javax.swing.*;
 
 //import javafx.fxml.FXMLLoader;

@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package boundary;
+package entity;
 
-import entity.*;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -25,7 +24,7 @@ import javax.swing.*;
  *
  * @author aluno
  */
-public class Raiz extends Application {
+public class Swing{
 
     public static void main(String[] args) {
         launch();

@@ -18,13 +18,13 @@ import javafx.stage.Stage;
 public class Admin extends Application {
 
 @Override
-public void start(Stage stage2)  {
+public void start(Stage stage)  {
     try{
         Parent parent = FXMLLoader.load(getClass().getResource("Admin.fxml"));
         Scene cena = new Scene(parent);
-        stage2.setScene(cena);
-        stage2.setTitle("Administração hospital");
-        stage2.show();
+        stage.setScene(cena);
+        stage.setTitle("Administração hospital");
+        stage.show();
         }
     catch (Exception e){
         e.printStackTrace();

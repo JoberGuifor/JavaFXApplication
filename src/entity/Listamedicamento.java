@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author aluno
  */
-class Listamedicamento {
+public class Listamedicamento {
 
     private ArrayList <Listamedicamento> MedicamentoPaciente = new ArrayList<>();
     public Listamedicamento(ArrayList<Listamedicamento> MedicamentoPaciente) {
